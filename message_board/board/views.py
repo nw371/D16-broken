@@ -1,3 +1,5 @@
-from django.shortcuts import render
+from django.views.generic import TemplateView
 
-# Create your views here.
+#представление главной страницы, чтобы отобразить свпй шаблон
+class IndexPage(TemplateView):
+    template_name = 'default.html'
